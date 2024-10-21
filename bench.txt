@@ -1,0 +1,20 @@
+https://en.wikipedia.org/wiki/Comparison_of_programming_languages
+
+https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)#Inline_comments
+
+Définitions uniquement :
+https://en.wikipedia.org/wiki/Comparison_of_multi-paradigm_programming_languages
+
+at multiparadigm :
+https://en.wikipedia.org/wiki/List_of_programming_languages_by_type
+
+Préconisations :
+https://en.wikipedia.org/wiki/Inner-platform_effect
+https://en.wikipedia.org/wiki/Greenspun%27s_tenth_rule
+https://en.wikipedia.org/wiki/Software_Peter_principle
+
+APL's dialects : 
+https://aplwiki.com/wiki/Category:APL_dialects
+
+à passer en revue :
+https://en.wikipedia.org/wiki/List_of_programming_languages

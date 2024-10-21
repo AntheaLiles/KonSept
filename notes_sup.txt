@@ -1,0 +1,5 @@
+"Progress is our path,
+Complexity builds the bridge,
+Simplicity waits." -- David Heinemeier Hansson, Rails World 2024, Toronto
+
+Ruby on Rails ==> the "one-person-framework".

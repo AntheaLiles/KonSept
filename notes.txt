@@ -1,0 +1,29 @@
+to do : 
+
+essayer et comparer divers LLM sur l'interraction avec les pdf => définir un protocole d'évaluation
+- NotebookLM
+- koralAI
+
+Note // aspect communautaire et inclusif : veiller à limiter la violence symbolique
+- non discrimination de genre, de classe, d'éducation, de culture
+
+
+* Sécurité
+** Moindre privilège
+
+Influence : [[http://subuser.org/subuser-standard/permissions-dot-json-file-format.html][Subuser]]
+
+** Virtualisation
+- Secure graphics: Using the XPRA X11 bridge working, windows are displayed without giving programs unfettered access to X11.
+- QubesOS style window border coloring.
+- Editable permissions: If you don’t like the permissions a program wants, you can change them! After all, its YOUR computer!
+
+https://subuser.org/security.html
+
+
+* Communauté
+En tant que membre de la communauté, vous vous engagez à
+
+** Limiter toute forme de violence symbolique.
+	Nottament par le respect de l'emploi d'un langage formel et factuel pour tous les contenus textuels, dans la langue de rédaction sélectionnée. 
+	Vous veillerez entres autres à l'abscence de jargon, d'acronymes, de prise de position et de citation ou d'expression en langues anciennes.
