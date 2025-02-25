@@ -1,5 +1,5 @@
 * Présentation
-** Phylosophie
+** Philosophie
 Hardware et Software ne sont que deux constituants d'un système devant s'harmoniser pour atteindre ses objectifs.
 *** Simple et atomique
 Suckless
@@ -1462,3 +1462,69 @@ Pour les opérations sur des séquences potentiellement infinies.
 - Expressivité élevée
 - Sécurité accrue grâce à l'élimination des effets de bord non contrôlés
 - Facilité de parallélisation et d'optimisation
+** Code de bonnes pratiques
+*** Développement d'une fonction
+Toute fonction doit faire l'objet d'un document d'explication.
+Celui-ci doit contenir à minima :
+- La fonction dans un exemple d'utilisation
+- Les contextes et cas d'utilisations
+- Sa construction logique
+- Sa construction mathématique
+- Une zone de test
+** Ligatures et i18n
+La particularité de KonSept est qu'il peut être traduit en différentes langues sans impacter la fonctionnalité du code source.
+
+*** Assignations et flux de données
+
+| Symbole | EN      | FR       | Action                                                                |
+|---------+---------+----------+-----------------------------------------------------------------------|
+| ⎀       | import  | importe  |                                                                       |
+| ≝       | defunc  |          |                                                                       |
+| ≜       | pass-to | envois-a | Transmet le résultat de la fonction précédente à la fonction suivante |
+
+*** Validations de données
+
+| Symbole | EN                    | FR                    | Action                                                              |
+|---------+-----------------------+-----------------------+---------------------------------------------------------------------|
+| =       | equal                 | egal                  | Vérification de l'égalité des valeurs à transformation de type près |
+| ≈       | barely-equal          | presque-egal          | Vérifie l'égalité du schémas de valeurs au type près                |
+| ≉       | not-barely-equal      | pas-presque-egal      | Vérifie la non égalité du schéma de valeurs au type près            |
+| ≠       | not-equal             | pas-egal              | Vérifie la non égalité des valeurs au type près                     |
+| ≡       | equivalent            | identique             | Vérifie l'équivalence de valeur et de type                          |
+| ≋       | barely-equivalent     | presque-identique     | Vérifie l'équivalence du schéma de valeur et l'égalité de type      |
+| CUSTOM  | barely-not-equivalent | pas-presque-identique | Vérifie la non équivalence du schéma de valeur et l'égalité de type |
+| ≢       | not-equivalent        | pas-identique         | Vérifie la non équivalence de type et de valeur                     |
+| ≍       |                       | equivalent            |                                                                     |
+| ≭       |                       | pas-equivalent        |                                                                     |
+
+*** Opérateurs logiques
+
+Défini les jonctions (SQL's ~INNER JOIN~, etc.)
+
+| Symbole | Unicode | EN     | FR              | Wittgenstein table |
+|---------+---------+--------+-----------------+--------------------|
+| ⋀      | U+22C0  | and    | et              | (T F F F)(p, q)    |
+| ⊼      | U+22BC  | nand   | non-et          | (F T T T)(p, q)    |
+| ⋁      | U+22C1  | or     | ou              | (T T T F)(p, q)    |
+| ⊽      | U+22BD  | nor    | non-ou          | (F F F T)(p, q)    |
+| ⊻      | U+22BB  | xor    | ou-exclusif     | (F T T F)(p, q)    |
+| v̲̅      |         | xnor   | non-ou-exclusif | (T F F T)(p, q)    |
+| ¬       | U+00AC  | not    | non             | (F F T T)(p, q)    |
+| →       |         | imply  | implique        | (T F T T)(p, q)    |
+| ↛       |         | nimply | non-implique    | (F T F F)(p, q)    |
+
+
+*** Comparaison de données
+
+| Symbole | Unicode | EN | FR                | Action |
+|---------+---------+----+-------------------+--------|
+| <       | U+003C  |    | inf               |        |
+| ≤       | U+2264  |    | inf-egal          |        |
+| ≦       | U+2266  |    | inf-equiv         |        |
+| ≲       | U+2272  |    | inf-presque-egal  |        |
+| ⪅      | U+2A85  |    | inf-presque-equiv |        |
+| >       | U+003E  |    | sup               |        |
+| ≥       | U+2265  |    | sup-egal          |        |
+| ≧       | U+2267  |    | sup-equiv         |        |
+| ≳       | U+2273  |    | sup-presque-egal  |        |
+| ⪆      | U+2A86  |    | sup-presque-equiv |        |
