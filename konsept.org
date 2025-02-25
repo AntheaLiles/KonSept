@@ -1,0 +1,25 @@
+#+TITLE: KonSept (K7)
+
+Scheduled tasks :
+
+#+begin_src: elisp
+(defun count)
+(count new-entry)
+(@count 10 block) ;; at + event + rule  = action 
+#+end_src
+
+Plateforme de collaboration :
+Pour le développement du langage et ses composants
+
+BDD et Gamification
+
+Pour chaque module (cassette)
+- Jeu d'amélioration (à la advent-of-code)
+- Reward en crypto K7C (konsept coin)
+- Voir la vidéo en dynamique programming // Consept de programmation
+- Problème + Zone de code + Test, Bench, Ranking
+- Les meilleurs benchs entrainent des PR
+
+  Challenge :
+  - Comment synchroniser les modifications en ASM avec le code WAT ?
+  
