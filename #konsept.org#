@@ -85,7 +85,69 @@ Subroutines Token-threaded
 - Mise à l'échelle automatique et sans maintenance (network discovery, hardware discovery)
 - Basée sur la pile (stack) et optimisation du (heap)
 
-** Gestionnaire de paquets
+*LambdaLite*
+
+Le système de gestion de base de donnée administre l'intégralité des informations et fichiers stockés par l'utilisateur.
+
+** Ligne de commande
+*Lish* signifie LIsp SHell
+
+Il s'agit d'une interface système basée sur la synthaxe Common-Lisp permettant d'éxecuter des fonctions d'administrations. Cette interface peut être appelée n'importe ou dans le système, y compris depuis le code source d'une application. Cela permet un développement plus étroit des modules avec le système.
+
+Cette interface fonctionne nativement avec le reste des composants du système. Il constitue notamment l'orchestrateur de la base de donnée.
+
+Inspirations : Bash, Linux cmd, Git, Guix, SQL, Nu shell, etc.
+
+Le système d'exploitation utilise son propre langage d'administration. Il s'agit de *Lish* :
+- *L* ish *i* s a *sh* el
+- *L* isp *i* n a *sh* el
+
+Lish est une utilisation en invite de commande de Common Lisp.
+
+Sa synthaxe est excessivement simple et explicite :
+#+begin_src lisp
+(fonction :propriété valeurs)
+#+end_src
+
+La requette suivante :
+#+begin_src bash
+find / -type f -name "*.mp3"
+#+end_src
+
+Devient :
+#+begin_src lisp
+(list :file-type mp3)
+#+end_src
+
+Nous remarquons la proximité avec une requette SQL qui pourrait être :
+#+begin_src sql
+    SELECT * FROM root WHERE mime_type = 'audio/mpeg';
+#+end_src
+
+La synthaxe de Lish se veut claire et explicite. L'avantage d'être basée sur Common Lisp est que cela offre la capacité de réaliser des requettes complexe en tirant avantage des s-expressions.
+
+
+Voici à quoi ressemble une session shell avec *lish* :
+#+begin_src common-lisp
+;; prompt
+username@domain[target][branch]: lambda (list :filetype mp3)]
+
+;; run
+(list (branch (target (domain nom-domain) nom-target) nom-branch)
+      :filetype mp3)
+
+;; return
+| file | size   | date      | etc.   |
+|------+--------+-----------+--------|
+| a    | xxx ko | timestamp | ...    |
+| b    | yyy ko | timestamp | ...    |
+| c    | zzz ko | timestamp | ...    |
+
+;; exemple d'erreur
+echo : no such file type on target
+
+#+end_src
+
 *** Benchmark
 **** Borg
 **** Hex
@@ -95,4 +157,11 @@ Subroutines Token-threaded
 ** Token economie (K7C)
 - Default token à "miner" en réalisant les formations KonSept
 - Creation token obtenu lors du développement plannifié, de l'amélioration, optimisation ou sécurisation d'une cassette
+- Utilisation des K7C (KonSept Coin) pour déployer ou consommer des services sur le réseau distribué
+
+#+begin_src plantuml
+@startuml
+  
+@enduml
+#+end_src
 * <=========== END ===========>

@@ -1503,15 +1503,15 @@ Défini les jonctions (SQL's ~INNER JOIN~, etc.)
 
 | Symbole | Unicode | EN     | FR              | Wittgenstein table |
 |---------+---------+--------+-----------------+--------------------|
-| ⋀      | U+22C0  | and    | et              | (T F F F)(p, q)    |
-| ⊼      | U+22BC  | nand   | non-et          | (F T T T)(p, q)    |
-| ⋁      | U+22C1  | or     | ou              | (T T T F)(p, q)    |
-| ⊽      | U+22BD  | nor    | non-ou          | (F F F T)(p, q)    |
-| ⊻      | U+22BB  | xor    | ou-exclusif     | (F T T F)(p, q)    |
+| ⋀       | U+22C0  | and    | et              | (T F F F)(p, q)    |
+| ⊼       | U+22BC  | nand   | non-et          | (F T T T)(p, q)    |
+| ⋁       | U+22C1  | or     | ou              | (T T T F)(p, q)    |
+| ⊽       | U+22BD  | nor    | non-ou          | (F F F T)(p, q)    |
+| ⊻       | U+22BB  | xor    | ou-exclusif     | (F T T F)(p, q)    |
 | v̲̅      |         | xnor   | non-ou-exclusif | (T F F T)(p, q)    |
 | ¬       | U+00AC  | not    | non             | (F F T T)(p, q)    |
 | →       |         | imply  | implique        | (T F T T)(p, q)    |
-| ↛       |         | nimply | non-implique    | (F T F F)(p, q)    |
+| ↛      |         | nimply | non-implique    | (F T F F)(p, q)    |
 
 
 *** Comparaison de données
@@ -1522,9 +1522,9 @@ Défini les jonctions (SQL's ~INNER JOIN~, etc.)
 | ≤       | U+2264  |    | inf-egal          |        |
 | ≦       | U+2266  |    | inf-equiv         |        |
 | ≲       | U+2272  |    | inf-presque-egal  |        |
-| ⪅      | U+2A85  |    | inf-presque-equiv |        |
+| ⪅       | U+2A85  |    | inf-presque-equiv |        |
 | >       | U+003E  |    | sup               |        |
 | ≥       | U+2265  |    | sup-egal          |        |
 | ≧       | U+2267  |    | sup-equiv         |        |
 | ≳       | U+2273  |    | sup-presque-egal  |        |
-| ⪆      | U+2A86  |    | sup-presque-equiv |        |
+| ⪆       | U+2A86  |    | sup-presque-equiv |        |
